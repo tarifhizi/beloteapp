@@ -8,14 +8,18 @@
 </head>
 <body>
  
-  <%= link_to "Home", welcome_index_path %>
-  <%= link_to "Belote", welcome_belote_path %>
-  <%= link_to "Chkobba", welcome_chkobba_path %>
-  <%= link_to "Rummy", welcome_rummy_path %>
-  <%= link_to "Players", players_path %>
-  <%= link_to "login", welcome_login_path %>
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li><%= link_to "Home", welcome_index_path %></li>
+      <li><%= link_to "Belote", welcome_belote_path %></li>
+      <li><%= link_to "Chkobba", welcome_chkobba_path %></li>
+     <li> <%= link_to "Rummy", welcome_rummy_path %></li>
+     <li> <%= link_to "Players", players_path %></li>
+      <li><%= link_to "login", welcome_login_path %></li>
+    </ul>
+ 
 
-<%= yield %>
-
+    <%= yield %>
+  </div>
 </body>
 </html>
