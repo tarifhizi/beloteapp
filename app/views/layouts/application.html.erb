@@ -7,6 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+ 
+  <%= link_to "Home", welcome_index_path %>
+  <%= link_to "Belote", welcome_belote_path %>
+  <%= link_to "Chkobba", welcome_chkobba_path %>
+  <%= link_to "Rummy", welcome_rummy_path %>
+  <%= link_to "Players", players_path %>
+  <%= link_to "login", welcome_login_path %>
 
 <%= yield %>
 
